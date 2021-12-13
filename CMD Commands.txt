@@ -1,0 +1,413 @@
+CMD Uses and Commands
+========================================
+Contents:
+
+1) Checking Windows (Genuine)
+2) Checking System
+3) Changing color
+4) Checking IP Address
+5) Scan System
+6) Shutdown Computer
+7) Use Function keys 
+8) Checking Drivers
+9) Fix issues with DNS resolver cache
+10) Find WiFi password
+11) Enable copy and paste in Command Prompt
+12) Speed Up Internet Using CMD
+13) Remove Virus From USB Or Any Drive 
+14) Checking Laptop Battery
+15) Hide Any Drive in Windows Using Command Prompt
+16) Find Windows 10 Product Key Using CMD
+17) Windows 10 keyboard shortcuts in Command Prompt
+18) How To Create Bootable USB Without Any Software In Windows 10 (Using Command Prompt)
+19) Reset Windows password 
+20) Find Router Password
+21) Convert BIOS from Legacy to UEFI
+22) Convert FAT32 to NTFS
+====================================================================
+
+1: CHECKING WINDOWS (GENUINE)                                              (WITHOUT QOUTES)
+
+Run CMD as administrator.  Type the command       “slmgr /xpr”  or "slmgr.vbs /dli"
+
+Press Enter and you should see a prompt saying whether your Windows machine is activated or not. 
+Click or tap OK, and you are done.
+--------------------------------------------------------------------------------------------------
+
+2: CHECKING SYSTEM
+
+Run CMD as administrator.  Type the command     "systeminfo"
+
+If you need to know what brand of network card you have, processor details, or the exact version of your Windows OS.
+The SYSTEMINFO command can help.         
+This command polls your system and pulls the most important information about your system.
+It lists the information in a clean format that’s easy to read.
+------------------------------------------------------------------------------------------------------------------------
+
+3: CHANGING COLOR
+         
+ BACKGROUND COLOR CODE  .	      Color
+ ========================================================     
+                        .
+         0	        .              black
+         1	        .              blue
+         2	        .              green
+         3	        .              cyan
+         4	        .              red
+         5          	.              magenta
+         6	        .              yellow/brown
+         7	        .              white
+         8	        .              gray
+         9	        .              bright blue
+
+
+  FONT COLOR CODE                     COLOR
+==========================================================
+                        .
+         a	        .              bright green
+         b	        .              bright cyan
+         c	        .              bright red
+         d	        .              bright magenta
+         e	        .              bright yellow
+         f	        .              white
+
+ How to use:
+ ...............                        .....................Alphabet represents Font color
+                                        .
+Run CMD as administrator.  Type "color 0a"  (Example)
+                                       .
+                                       ............ Digit is background
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+4: CHECKING IP-ADDRESS
+
+Run CMD as administrator.  Type the command   "ipconfig"
+
+Network troubleshooting is never simple, but one command that makes it much easier is IPCONFIG.
+Using this command in the CMD command prompt returns detailed information about your current network adapter connection including:
+
+- Current IP Address
+- Subnet Mask
+- Default Gateway IP
+- Current domain
+
+This information can help you troubleshoot router issues and other connection issues you could be having with your network adapter.
+---------------------------------------------------------------------------------------------------------------------------------------
+
+5: SCAN SYSTEM
+
+Run CMD as administrator.  Type the command "sfc /scannow"
+
+If you’re ever concerned that a virus or some other software might have corrupted your core system files,
+there’s a Windows command that can scan those files and ensure their integrity.
+You need to launch CMD as administrator (right click and choose Run as Administrator).
+Typing SFC /SCANNOW will check the integrity of all protected system files. 
+If a problem is found, the files will be repaired with backed-up system files.
+The SFC command also lets you:
+
+- /VERIFYONLY: Check the integrity but don’t repair the files.
+- /SCANFILE: Scan the integrity of specific files and fix if corrupted.
+- /VERIFYFILE: Verify the integrity of specific files but don’t repair them.
+- /OFFBOOTDIR: Use this to do repairs on an offline boot directory.
+- /OFFWINDIR: Use this to do repairs on an offline Windows directory.
+- /OFFLOGFILE: Specify a path to save a log file with scan results.
+
+The scan can take up to 10 or 15 minutes, so give it time.
+----------------------------------------------------------------------------------------------------------------------------------
+
+6: SHUTDOWN COMPUTER
+
+Run CMD as administrator.  Type the command   "shutdown /i"
+
+The SHUTDOWN command is a pretty versatile command that lets you shutdown the computer but control the behavior of that shutdown. 
+It’s commonly used as a scheduled task or part of an IT batch job after patches have been applied to a computer system.
+Typing shutdown /i from the command prompt will initiate a shutdown.
+But it’ll upon a GUI to give the user an option on whether to restart or do a full shutdown.
+If you don’t want to have any GUI pop up, you can just issue a shutdown /s command.
+There is a long list of other parameters you can use to do a log off, hibernate, restart, and more.
+Just type shutdown without any arguments to see them all.
+-----------------------------------------------------------------------------------------------------------------------------------
+
+7: USE FUNCTION KEYS
+
+One out of the very useful CMD tricks is to use function keys.
+There is a lot these keys can do to improve your CMD experience.
+
+Fuction keys                        use
+
+F1                                  Repeats the letters of the last command line, one by one.
+
+F2                                  Displays a dialog asking user to "enter the char to copy up to" of the last command line.
+
+F3                                  Repeats the last command line.
+
+F4                                  Displays a dialog asking user to "enter the char to delete up to" of the last command line.
+
+F5                                  Goes back one command line.
+
+F6                                  Enters the traditional CTRL+Z
+
+F7                                  Displays a menu with the command line history ALT + F7 will clear the command line history.
+
+F8                                  Cycles back through previous command lines (beginning with most recent). 
+                                    If having typed the first few letters for the wanted command, then it will
+                                    only cycle through the previous commands matching that prefix when pressing F8.
+
+F9                                  Displays a dialog asking user to enter a command number, where 0 is for first command line entered.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+8: CHECKING DRIVERS
+
+Run CMD as administrator.  Type the command   "driverquery".
+
+Using a simple command, you can see all the drivers installed on your computer. All you need to do is run the driverquery command, 
+and you’ll be seeing a list of all the drivers along with their name, type, and other information.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+9: FIX ISSUES WITH DNS RESOLVER CACHE
+
+Run CMD as administrator.  Type the command   "ipconfig /flushdns".
+
+To access websites faster, your computer usually maintains a local DNS resolver cache. But sometimes, the cache might get corrupt, 
+and you may not be able to access your favorite sites.
+In that case, you can try this Windows command prompt trick to save the day. You can use the Ipconfig utility to remove the DNS cache.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+10: FIND WIFI PASSWORD
+
+Run CMD as administrator.  Type the command   "netsh wlan show profile".
+
+It will show all the previously connected wifi profiles.
+
+Now type the command   "netsh wlan show profile WiFi-name key=clear".
+You will replace your wifi name with "Wifi-name". Then it will show you all the details and password of the selected wifi name.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+11: ENABLE COPU AND PASTE IN COMMAND PROMPT
+
+1) Run your command prompt as administrator.
+2) Go to the properties of the command prompt by right clicking on its top and then clicking on the properties.
+3) Once the properties of the command prompt open up, go to the Experimental tab.
+4) Under Experimental, click or check on Enable Experimental Console Features (applies globally).
+5) And then, also check on Enable new Ctrl key shortcuts. You can refer the image below for the same.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+12: SPEED UP INTERNET USING CMD
+
+To speed up the internet using cmd, we have come up with some Windows tweaks. Some of these tweaks and tricks include playing with DNS cache,
+pinging to the default gateway and using ‘netsh int tcp’ command along with different attributes to increase the internet speed.
+
+1) To know your default gateway, you can use "ipconfig /all" command.
+2) Once you get the IP address of your default gateway, start running a continuous ping by typing "ping -t <your default gateway address>". 
+3) The time field value will show you the time taken to get an acknowledgment from the gateway.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+13: REMOVE VIRUS FROM USB OR ANY DRIVE 
+
+Here are the basic attributes of the 'attrib' command which we will use later:
+
+1) R – R represents the “Read-only” attribute of a file or folder. Read-only means the file cannot be written or executed.
+2) H – H stands for the “Hidden” attribute.
+3) A – Similarily,  A stands for “Archiving” which prepares a file for archiving.
+4) S – S attribute changes the selected files or folders into a system file from a user file by assigning the “System” attribute to that particular file.
+
+- Run command prompt as an administrator
+- Since the autorun.inf virus is in my D: drive, I am going to change the drive to D: drive. It can be done by typing "D:" and press enter.
+- Type "attrib" and press enter. This command will list out all the files inside the current drive. 
+- To remove Virus using CMD, type into your command prompt "attrib -r -a -s -h *.*" and press Enter.
+
+_  -r is for removing the read-only files
+_  -a is for removing the archive file
+_  -s is for removing the system file
+_  -h is for removing the hidden file
+_  *.* for all the files with all different types of file extensions
+
+- Note that this command will only remove the different attributes from different files.
+- However, the files will still be there. Now time has come to delete the virus. So, to delete the virus, type "del autorun.inf" and enter.
+- Once you have pressed enter, that file should get deleted from the current drive. In case, you want to delete that file from a USB stick,
+  then you can change your current drive to USB drive current drive in step 2 and follow the commands.
+- You can again type 'attrib' command to see if the deleted file exists or not. As seen above, it does not exist anymore in the D drive.
+- To remove other viruses with extensions such as ".ink", ".exe", just type Del *.ink or Del *.exe respectively to delete those suspicious files.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+   
+14: CHECKING LAPTOP BATTERY
+
+Run CMD as administrator.  Type the command   "powercfg/energy".        
+
+- It will take some seconds to generate an energy report of your battery.
+- To access the energy report, press Windows+R and type the location:
+         
+            C:\WINDOWS\system32\energy-report.html
+
+- Click Ok. This file will open in your web browser.
+
+----------------------------------------------------------------------------------------------
+
+15: HIDE ANY DRIVE IN WINDOWS USING COMMAND PROMPT
+
+To hide any drive in Windows using CMD, follow the steps mentioned below.
+
+For this tutorial purpose  I am going to assign drive letter ‘F’. You can choose any of your drive letter i-e D, E etc
+Follow the steps.
+
+- Run CMD as administrator.
+- Type the command “Diskpart” in your command prompt.
+- Then type "list volume" and you can see that all the volumes are listed down after your press ENTER.
+- You will see that all the volumes have a volume number like 1, 2, 3, 4 etc. and each volume is assigned a letter such as C, D, E, F etc.
+- Now remember the volume number you want to hide. In my case, I want to hide my newly created volume assigned the letter F and it has volume number 4.
+- Now type "select volume 4" and press enter. (Your volume number could be different than mine in this case).
+- In the next step, we are going to hide the volume 4 or the volume you have selected in your case. 
+- In my case, for volume 4, the letter is ‘F’. In your case, the letter could be C, D, E, F etc.
+- Type "remove letter F" in your command prompt.
+- And it’s done. The selected drive has been hidden successfully.
+- Now, let’s unhide the same drive.
+- Close your command prompt and follow the shown above (until select volume 4).
+- Now, type "assign letter F" (your drive letter in this case) and then press enter. 
+- Now your hidden drive has been unhided.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+16: FIND WINDOWS 10 PRODUCT KEY USING CMD
+
+
+Run CMD as administrator.  Type the command   "wmic path softwarelicensingservice get OA3xOriginalProductKey".  
+
+This step will promptly show your Windows key. Note that this method also works for OEM and Retail licenses.
+
+---------------------------------------------------------------------------------------------------------------------
+
+17: WINDOWS 10 KEYBOARD SHORTCUTS IN COMMANDS PROMPT
+
+- In Windows 10 final version, Command Prompt keyboard shortcuts are turned on by default.
+- If you are having the earlier builds, you can check the Properties and turn them on.
+- In the Command Prompt and right-click on the title bar to open the options and click Properties. Under the Options tab, 
+- find the section Edit Options and check the box next to Enable Ctrl key shortcuts.
+--------------------------------------------------------------------------------------------------------------------------------
+
+18: How To Create Bootable USB Without Any Software In Windows 10 (Using Command Prompt)
+
+- Insert your USB flash drive into your computer.
+- Open Start Menu and type CMD to find Command Prompt. Right click on Command Prompt and click Run as Administrator.
+- Alternatively, you can also open the Command Prompt by pressing Windows+R > Type CMD > Press Enter.
+- Once the Command Prompt window appears, type diskpart and hit enter. Wait until the diskpart utility starts running.
+- In the new diskpart window, type list disk and hit enter. It will show you all active disks on your computer.
+- Most probably, you will see two Disk types.
+   Disk 0 is for the hard drive and,
+   Disk 1 is for your USB Flash Drive with its total capacity.
+- Since we are going to work on to create bootable USB using CMD, we will work with Disk 1.
+- Type select disk 1 in the same window and hit Enter. You will get a message ‘Disk 1 is now the selected disk’. 
+  That means, any further operation that you do will affect your disk 1 directly.
+- Type clean and hit Enter to remove all of the data in the USB drive. Clean command will format your bootable drive.
+  You will get a message like ‘Diskpart succeeded in cleaning the disk’.
+- Type create partition primary and hit Enter. You will get a message like Diskpart succeeded in creating the specified partition.
+- Type select partition 1 and hit Enter. It will choose partition 1 for setting up it as an active partition.
+- Next, type active and hit Enter. It will activate the current partition.
+- Now, type format fs=ntfs quick and hit Enter. This command will format your current partition as NTFS file system quickly.
+- Type exit and hit Enter. Exit command will close the Diskpart program but it doesn’t close the CMD window.
+
+    Copying files from a DVD/ ISO file to bootable USB using CMD:
+- Let us assume that the USB drive is the G: drive and the DVD drive has been assigned the letter E. 
+  And, you also have inserted a DVD inside the DVD drive from where you want to copy the data to create a bootable USB drive via CMD.
+  By default, Command Prompt’s active directory for Administrator permission is on C:\Windows\System32>.
+  We will navigate Command Prompt to set on DVD (E:) as its active directory. Remember there should be a DVD inside DVD drive.
+- Just type E: then hit Enter, and then the active directory is changed to E.
+- Type cd boot and hit Enter. Now the active directory is changed to E:\boot>
+- Type bootsect /nt60 g: and hit Enter. It will create the boot sector on G: drive (USB Flash drive).
+- Type exit and hit Enter to close the Command Prompt.
+
+   Until this step, we have been successfully able to create a bootable USB drive and the flash drive is ready to be used as a boot media.
+   To install Windows from a bootable USB drive, we just need to copy the whole installation files contained on the DVD installer to the USB flash drive.
+
+- To do this, open the Command Prompt as in previous steps.
+  Once the command prompt is open, type copy e:\*.* /s/e/f g: and then press Enter. Wait until all the files in the DVD installer
+  are copied onto the flash drive. Please double check the drive letter of your USB and DVD.
+ 
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+19) RESET WINDOWS PASSWORD
+
+To reset the windows password follow the steps.
+
+- Turn ON your PC. Then press the power button of your PC until it OFF.
+- Now turn ON the PC. It will go to the automatic repairs.
+- Then go to the "Troubleshoot". Then go to "Advanced options". 
+- Following options will appear. Click on the "Command Prompt".
+- It will launch the command prompt.
+- Now you need to find that where your windows has been installed. Generally windows is intalled in "C" directory, but you will assign your drive
+  letters to find the installation directory of your windows. For this you will assign drive letters one by one.
+- First type "c:" without qoutes and press Enter key. Then type "dir" and press Enter key. Remember that type all the commands wihout qoutes.
+- Now if it will shows that  0 dir(s), then assign another drive letter.
+- Now type "d:" and press Enter key. Then type "dir" and press Enter key.
+- If it will shows the windows files then stop.
+- Now type "cd windows" and press Enter key. It will let you in the windows folder. Then type "cd system32" and press Enter key.
+- Now it will let you in te system32 folder. Then type "ren utilman.exe utilman_bak.exe" and press Enter key.
+- Then type "copy cmd.exe utilman.exe" and press Enter key. It will show you that "1 file(s) copied".
+- Now type "exit" and press Enter key.
+
+It will exit the command prompt.
+
+- Now turn OFF your PC. 
+- Now again start your PC normally.
+- Then click on "ease of access" located at the bottom on left side with "Power" symbol.
+- Then it will launch the command prompt.
+- Now type "control userpasswords2" and press Enter key.
+- A dialog box will appear. 
+- select your administrator and then click on "Reset Password". It will show to enter "New password" and "Confirm new password".
+- Type your any password or leave it blank.
+- Then click on OK.
+- Now type "exit" and press Enter key.
+- Now your windows password has been reset.
+
+
+=======================================================================================================================================================
+
+20) FINDING ROUTER PASSWORD
+
+Run cmd and type the command "arp -a" and hit Enter key.
+--------------------------------------------------
+all user names are "admin"
+You will see some mac address. 
+On last interface under "Physical Address" Fisrt or may be last mac address five digits without dashes is your router's password.
+If it shows incorrect user name or password then press CAPSLOCK and then try again.
+==========================================================================================================
+
+21) CONVERT BIOS FROM LEGACY TO UEFI
+
+- Turn ON your PC/Laptop. Search for System information. Now see in the BIOS Mode that it is in Legacy.
+- Now restart PC/Laptop and boot it from any bootable usb. In Dell PC/Laptops the boot key is F12 while in HP 
+  PC/Laptops the boot key is usually esc.
+- Now press Shift+F10, so it will open Command Prompt (cmd).
+- Type and execute the commands one by one.
+
+   diskpart 
+   sel dis 0 
+   lis dis 
+   lis par
+   sel par 1 
+   lis par
+   det par
+   for quick fs=fat32
+   det par
+   exit
+   bcdboot /?
+   bcdboot (windows location drive letter):\Windows /s c: /f UEFI e.g bcdboot d:\Windows /s c: /f UEFI
+   dir C:\
+   exit
+
+- Now after exiting from cmd and bootable usb you will the error.
+- Just restart your system and go to the BIOS setup.
+- In BIOS settings mark UEFI and then click on Add boot options.
+- Now browse and see the directory ef > boot > bootx64 ef\.
+- Now save and exit from BIOS setup.
+- Again search for System information to check that your system is converted into UEFI or not.
+=======================================================================================================================
+
+22) CONVERT FAT32 TO NTFS
+
+Run cmd and type the command "convert H: /FS:NTFS" and hit Enter key.
+-------------------------------------------------------------------
+- 'H' is the drive letter.
+====================================================================================
